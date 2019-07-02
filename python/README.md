@@ -20,10 +20,10 @@ b. add the cross-compiler path to PATH<br/>
 \# export PATH=/opt/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf/bin:$PATH
 
 c. do the necessary setting before configure<br/>
-\# echo ac_cv_file__dev_ptmx=no > config.site
-\# echo ac_cv_file__dev_ptc=no >> config.site
-\# export CONFIG_SITE=config.site
-	If you wanna build math lib into python
+\# echo ac_cv_file__dev_ptmx=no > config.site<br/>
+\# echo ac_cv_file__dev_ptc=no >> config.site<br/>
+\# export CONFIG_SITE=config.site<br/>
+	If you wanna build math lib into python<br/>
 \# echo "math mathmodule.c _math.c # -lm # math library functions, e.g. sin()" >> Modules/Setup.local
 
 d. execute configue to generate Makefile<br>
@@ -39,7 +39,7 @@ and make sure "file python" tells you it is a statically linked one
 a. copy binary python and fold Lib(rename it to python3.7) to target board as below<br/>
 ![avatar](pics/python_and_lib_location.bmp)
 
-b. 
+b. setup PYTHONHOME<br/>
 \# export PYTHONHOME=/usr/lib/python/
 
 c. run<br/>
