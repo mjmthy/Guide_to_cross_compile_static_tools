@@ -9,12 +9,12 @@ b. need to setup the cross compiling environment
 	
 # Steps to cross compile static busybox
 a. obtain the latest busybox source codes
-\# wget https://busybox.net/downloads/busybox-1.31.0.tar.bz2
-\# tar -jxvf busybox-1.31.0.tar.bz2
+\# wget https://busybox.net/downloads/busybox-1.31.0.tar.bz2  
+\# tar -jxvf busybox-1.31.0.tar.bz2  
 \# cd busybox-1.31.0
 
-b. do the necessary configuration so that busybox can be built staticly
-\# make defconfig
+b. do the necessary configuration so that busybox can be built staticly  
+\# make defconfig  
 \# make menuconfig
 
 	Select Settings->Buid Options->Build static binary(no shared libs)
