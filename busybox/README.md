@@ -8,7 +8,7 @@ b. need to setup the cross compiling environment
 	For b, the detail process is not covered by this document, but I believe you can find the answer from the website of your cross-compiler. And for user friendly OS as Ubuntu, you can install the cross-compiler by "apt install"
 	
 # Steps to cross compile static busybox
-a. obtain the latest busybox source codes
+a. obtain the latest busybox source codes  
 \# wget https://busybox.net/downloads/busybox-1.31.0.tar.bz2  
 \# tar -jxvf busybox-1.31.0.tar.bz2  
 \# cd busybox-1.31.0
