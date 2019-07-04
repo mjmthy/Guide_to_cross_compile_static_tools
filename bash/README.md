@@ -19,7 +19,7 @@ b. add the cross-compiler path to PATH
 c. execute configue to generate Makefile  
 \# ./configure CC=arm-linux-gnueabihf-gcc --host=armv7 --build=x86_64 --enable-static-link --enable-history --without-bash-malloc
 
-d. modify the generated Makefile to make it static compiling
+d. modify the generated Makefile to make it static compiling  
 ![avatar](pics/make_it_static.bmp)
 
 e. make  
