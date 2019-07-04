@@ -21,7 +21,7 @@ b. do the necessary configuration so that busybox can be built staticly
 
 ![avatar](pics/enable_static_build.bmp)
 
-c. make
+c. make  
 \# make CROSS_COMPILE=/opt/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 
 	After the above steps, you'll have a staticly cross-compiled busybox binary, and make sure "file busybox" tells you it is a statically linked one
