@@ -29,7 +29,7 @@ c. do the necessary setting before configure
 \# echo "math mathmodule.c _math.c # -lm # math library functions, e.g. sin()" >> Modules/Setup.local
 
 d. execute configue to generate Makefile<br>
-\# ./configure LDFLAGS="-static" --disable-shared CC=arm-linux-gnueabihf-gcc CXX=arm-linux-gnueabihf-g++ AR=arm-linux-gnueabihf-gcc-ar RANLIB=arm-linux-gnueabihf-ranlib --host=arm-linux-gnueabihf --build=armv7 --disable-ipv6
+\# ./configure LDFLAGS="-static" --disable-shared CC=arm-linux-gnueabihf-gcc CXX=arm-linux-gnueabihf-g++ AR=arm-linux-gnueabihf-gcc-ar RANLIB=arm-linux-gnueabihf-ranlib --host=arm-linux-gnueabihf --build=x86_64-linux-gnu --disable-ipv6
 
 d. make<br/>
 \# make python LDFLAGS="-static" LINKFORSHARED=" "

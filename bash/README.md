@@ -17,7 +17,7 @@ b. add the cross-compiler path to PATH
 \# export PATH=/opt/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf/bin:$PATH
 
 c. execute configue to generate Makefile  
-\# ./configure CC=arm-linux-gnueabihf-gcc --host=armv7 --build=x86_64 --enable-static-link --enable-history --without-bash-malloc
+\# ./configure CC=arm-linux-gnueabihf-gcc --host=arm-linux-gnueabihf --build=x86_64-linux-gnu --enable-static-link --enable-history --without-bash-malloc
 
 d. modify the generated Makefile to make it static compiling  
 ![avatar](pics/make_it_static.bmp)
