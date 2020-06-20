@@ -1,0 +1,15 @@
+diff --git a/tools/perf/Makefile b/tools/perf/Makefile
+index cd86fd7b35c4..b596495de6a9 100644
+--- a/tools/perf/Makefile
++++ b/tools/perf/Makefile
+@@ -1,3 +1,10 @@
++CFLAGS = -fno-omit-frame-pointer -ggdb3 -Wall -Wextra -std=gnu99 $(CFLAGS_WERROR) $(CFLAGS_OPTIMIZE) -D_FORTIFY_SOURCE=2 $(EXTRA_WARNINGS) $(EXTRA_CFLAGS)
++EXTLIBS = --static -lpthread -lrt -lelf -lm -lebl -ldl -L/opt/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/lib/
++ALL_CFLAGS = $(CFLAGS) -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -I/opt/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/include
++ALL_LDFLAGS = $(LDFLAGS)
++
++#EXTLIBS += -lpthread -lrt -lelf -lm -lebl -ldl -L/opt/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/libc/usr/lib/
++
+#
+# This is a simple wrapper Makefile that calls the main Makefile.perf
+# with a -j option to do parallel builds

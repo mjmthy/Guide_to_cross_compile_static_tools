@@ -1,0 +1,12 @@
+diff --git a/tools/perf/Makefile.perf b/tools/perf/Makefile.perf
+index ad3726c5754d..8a55603b3139 100644
+--- a/tools/perf/Makefile.perf
++++ b/tools/perf/Makefile.perf
+@@ -270,7 +270,9 @@ LIBTRACEEVENT = $(TE_PATH)libtraceevent.a
+export LIBTRACEEVENT
+LIBTRACEEVENT_DYNAMIC_LIST = $(TE_PATH)libtraceevent-dynamic-list
++ifeq ($(filter -static,$(LDFLAGS)),)
+LIBTRACEEVENT_DYNAMIC_LIST_LDFLAGS = -Xlinker --dynamic-list=$(LIBTRACEEVENT_DYNAMIC_LIST)
++endif
+LIBAPI = $(API_PATH)libapi.a
+export LIBAPI

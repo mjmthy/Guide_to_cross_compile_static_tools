@@ -4,8 +4,12 @@
 
 # List of supported tools
 
+```
 python
 
 busybox
 
 bash
+
+perf
+```
