@@ -5,11 +5,9 @@
 # List of supported tools
 
 ```
-python
-
-busybox
-
-bash
-
-perf
+a. python
+b. busybox
+c. bash
+d. perf
+e. trace-cmd
 ```
